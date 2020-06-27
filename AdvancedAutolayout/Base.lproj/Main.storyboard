@@ -19,31 +19,38 @@
                                 <rect key="frame" x="16" y="104" width="382" height="742"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yys-84-CW8">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="148.5"/>
                                         <state key="normal" title="Contrains de posicion"/>
                                         <connections>
                                             <segue destination="aTn-i2-hXF" kind="show" id="seN-wW-0dP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q39-UZ-aHs">
-                                        <rect key="frame" x="0.0" y="185.5" width="382" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="148.5" width="382" height="148.5"/>
                                         <state key="normal" title="Constraints de altura y anchura"/>
                                         <connections>
                                             <segue destination="Zce-U6-5An" kind="show" id="zs9-ZW-ftj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-gY-u3R">
-                                        <rect key="frame" x="0.0" y="371" width="382" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="297" width="382" height="148"/>
                                         <state key="normal" title="Modificar constrants por código"/>
                                         <connections>
                                             <segue destination="cse-vI-8w0" kind="show" id="SgT-Md-f0b"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzl-0a-V9d">
-                                        <rect key="frame" x="0.0" y="556.5" width="382" height="185.5"/>
+                                        <rect key="frame" x="0.0" y="445" width="382" height="148.5"/>
                                         <state key="normal" title="Crear constraints por código"/>
                                         <connections>
                                             <segue destination="jSe-93-kUb" kind="show" id="LXj-Xm-FWV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-Ef-F24">
+                                        <rect key="frame" x="0.0" y="593.5" width="382" height="148.5"/>
+                                        <state key="normal" title="Constraints de igualdad entre elementos"/>
+                                        <connections>
+                                            <segue destination="ArG-gt-GA6" kind="show" id="XsN-Y6-hJ8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,6 +70,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="741" y="1695"/>
+        </scene>
+        <!--Constraints de igualdad entre elementos-->
+        <scene sceneID="bYg-sE-i64">
+            <objects>
+                <viewController title="Constraints de igualdad entre elementos" id="ArG-gt-GA6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ShG-qZ-dhm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0T1-NO-OdE">
+                                <rect key="frame" x="16" y="104" width="200" height="300"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="4U2-YL-R5K"/>
+                                    <constraint firstAttribute="width" constant="200" id="X0x-nd-PJT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajl-iS-uaR">
+                                <rect key="frame" x="198" y="546" width="200" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEP-1K-nNS">
+                                <rect key="frame" x="32" y="420" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="apV-56-z02"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tbt-ud-PzS" firstAttribute="bottom" secondItem="Ajl-iS-uaR" secondAttribute="bottom" constant="16" id="4cJ-wH-Fg0"/>
+                            <constraint firstItem="tEP-1K-nNS" firstAttribute="top" secondItem="0T1-NO-OdE" secondAttribute="bottom" constant="16" id="ABc-AA-mmT"/>
+                            <constraint firstItem="Ajl-iS-uaR" firstAttribute="width" secondItem="0T1-NO-OdE" secondAttribute="width" id="HMG-0U-E3d"/>
+                            <constraint firstItem="0T1-NO-OdE" firstAttribute="leading" secondItem="Tbt-ud-PzS" secondAttribute="leading" constant="16" id="aOA-ps-mmo"/>
+                            <constraint firstItem="tEP-1K-nNS" firstAttribute="width" secondItem="0T1-NO-OdE" secondAttribute="width" id="eMt-tO-nVL"/>
+                            <constraint firstItem="Tbt-ud-PzS" firstAttribute="trailing" secondItem="Ajl-iS-uaR" secondAttribute="trailing" constant="16" id="nLp-PZ-jWL"/>
+                            <constraint firstItem="0T1-NO-OdE" firstAttribute="top" secondItem="Tbt-ud-PzS" secondAttribute="top" constant="16" id="naa-Wz-Kls"/>
+                            <constraint firstItem="Ajl-iS-uaR" firstAttribute="height" secondItem="0T1-NO-OdE" secondAttribute="height" id="riB-BR-F5L"/>
+                            <constraint firstItem="tEP-1K-nNS" firstAttribute="leading" secondItem="Tbt-ud-PzS" secondAttribute="leading" constant="32" id="uz8-kA-h2g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tbt-ud-PzS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de igualdad entre elementos" id="WaX-hT-cih"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEc-Nk-kfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="1695"/>
         </scene>
         <!--Crear constraints por código-->
         <scene sceneID="xtN-ha-sZE">
@@ -88,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yse-Da-cBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896" y="1695"/>
+            <point key="canvasLocation" x="3877" y="599"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sAR-ds-JL9">
