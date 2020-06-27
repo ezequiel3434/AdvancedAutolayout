@@ -15,6 +15,7 @@
 		371386AB24A7C86000932515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371386A924A7C86000932515 /* LaunchScreen.storyboard */; };
 		371386B624A7C86000932515 /* AdvancedAutolayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371386B524A7C86000932515 /* AdvancedAutolayoutTests.swift */; };
 		371386C124A7C86000932515 /* AdvancedAutolayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371386C024A7C86000932515 /* AdvancedAutolayoutUITests.swift */; };
+		371386CF24A7DB5D00932515 /* ModifyConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371386CE24A7DB5D00932515 /* ModifyConstraintsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		371386BC24A7C86000932515 /* AdvancedAutolayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedAutolayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		371386C024A7C86000932515 /* AdvancedAutolayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedAutolayoutUITests.swift; sourceTree = "<group>"; };
 		371386C224A7C86000932515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371386CE24A7DB5D00932515 /* ModifyConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyConstraintsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				371386A724A7C86000932515 /* Assets.xcassets */,
 				371386A924A7C86000932515 /* LaunchScreen.storyboard */,
 				371386AC24A7C86000932515 /* Info.plist */,
+				371386CE24A7DB5D00932515 /* ModifyConstraintsViewController.swift */,
 			);
 			path = AdvancedAutolayout;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				371386A324A7C85F00932515 /* ViewController.swift in Sources */,
 				3713869F24A7C85F00932515 /* AppDelegate.swift in Sources */,
 				371386A124A7C85F00932515 /* SceneDelegate.swift in Sources */,
+				371386CF24A7DB5D00932515 /* ModifyConstraintsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
